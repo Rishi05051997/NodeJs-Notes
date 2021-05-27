@@ -1,0 +1,17 @@
+imp sites for nodejs
+
+for package.json 
+https://nodesource.com/blog/the-basics-of-package-json-in-node-js-and-npm/
+
+### Event Loop is most imp in nodejs
+https://nodejs.dev/learn/the-nodejs-event-loop
+### Event loop videos
+### Below one for Browser JS Event Loop
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
+### Below one specially for Event Loop of NodeJs
+https://www.youtube.com/watch?v=PNa9OMajw9w
+
+
+#### For All Course material ---> sildes, APIS, 
+https://course-api.com/
