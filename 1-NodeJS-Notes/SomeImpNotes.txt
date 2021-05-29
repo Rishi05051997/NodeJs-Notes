@@ -15,3 +15,9 @@ https://www.youtube.com/watch?v=PNa9OMajw9w
 
 #### For All Course material ---> sildes, APIS, 
 https://course-api.com/
+
+#### Http Status Codes
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+#### MIME Type Notes 
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
