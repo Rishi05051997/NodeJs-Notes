@@ -21,3 +21,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
 #### MIME Type Notes 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+
+
+##### FOR Fake APIS
+https://hn.algolia.com/api

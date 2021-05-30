@@ -1,31 +1,24 @@
 const express = require('express');
-const path = require('path');
 
 const app = express();
 
+///// req => middleware => res
+const logger = () => {
+    const method = req.method;
+    const url = req.url;
+    const time = new Date().getFullYear();
+    console.log(method, url, time);
+}
 
-//// setup static and middleware
-/// static are those which server dont want to change 
-app.use(express.static('./public'))
+app.get('/',logger, (req, res)=> {
+    
+    res.send('Home');
+});
 
-
-// app.get('/', (req, res)=> {
-//     res.sendFile(path.resolve(__dirname, './navbar-app/index.html'));
-//  adding to static asset
-// SSR
-// })
-
-app.all('*', (req, res)=> {
-    res.status(404).send('Resource not found');
-})
+app.get('/about', (req, res)=> {
+    res.send('About');
+});
 
 app.listen(5000, (req, res)=> {
-    console.log('Server is listening on 5000....')
-})
-//app.get
-//app.post
-//app.put
-//app.delete
-//app.all
-//app.use
-//app.listen
+    console.log('Server is listening on port 5000....')
+});

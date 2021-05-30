@@ -6,13 +6,18 @@ app.get('/', (req, res) => {
   res.send('<h1> Home Page</h1><a href="/api/products">products</a>')
 })
 app.get('/api/products', (req, res) => {
+  //// here we did destructuring using map() method we considered a scenario in case we want only some field of an array of object then in that case we use desrtucturing so that few fields will return
   const newProducts = products.map((product) => {
     const { id, name, image } = product
     return { id, name, image }
   })
 
   res.json(newProducts)
-})
+});
+
+
+
+
 app.get('/api/products/:productID', (req, res) => {
   // console.log(req)
   // console.log(req.params)
